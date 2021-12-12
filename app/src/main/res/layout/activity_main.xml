@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/img_logo"
+    android:src="@drawable/main_pic"
+    android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_login"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginLeft="30dp"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sign"
+        android:text="Sign In"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/tv_sign"
+        android:background="@android:drawable/editbox_background_normal"
+        android:elevation="20dp"
+        android:hint="Email"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress" />
+
+
+</RelativeLayout>
