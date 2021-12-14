@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#fff"
+    android:paddingLeft="30dp">
 
 <ImageView
     android:layout_width="wrap_content"
@@ -17,36 +18,94 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_login"
         android:text="Login"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:layout_below="@+id/img_logo"
-        android:layout_marginLeft="30dp"
-        android:textSize="30sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:textColor="#000"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_sign"
-        android:text="Sign In"
-        android:layout_below="@+id/tv_login"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"/>
+        android:id="@+id/tv_login_back"
+        android:text="Login Back"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_login" />
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edt_email"
-        android:layout_below="@+id/tv_sign"
+        android:layout_below="@+id/tv_login_back"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:hint="Email"
+        android:textColorHint="#000"
+        android:elevation="20dp"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_email_24"
+        android:drawablePadding="20dp"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
         android:background="@android:drawable/editbox_background_normal"
         android:elevation="20dp"
-        android:hint="Email"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="30dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_lock_24"
+        android:drawablePadding="20dp"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
         android:padding="16dp"
         android:singleLine="true"
-        android:imeOptions="actionNext"
-        android:inputType="textEmailAddress" />
+        android:textColorHint="#000" />
 
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_bg"
+        android:paddingHorizontal="50dp"
+        android:text="Login" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ac"
+            android:text="Account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_ac" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
