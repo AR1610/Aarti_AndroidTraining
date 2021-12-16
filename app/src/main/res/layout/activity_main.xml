@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    android:paddingLeft="30dp">
+    android:background="@drawable/img_bg">
 
 <ImageView
     android:layout_width="wrap_content"
@@ -14,15 +13,16 @@
     android:layout_alignParentRight="true"/>
 
     <TextView
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_login"
-        android:text="Login"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_below="@+id/img_logo"
         android:layout_marginTop="40dp"
-        android:textColor="#000"/>
+        android:text="Login"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 
     <TextView
@@ -31,6 +31,7 @@
         android:id="@+id/tv_login_back"
         android:text="Login Back"
         android:textSize="20sp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/tv_login" />
 
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/edt_email"
         android:layout_below="@+id/tv_login_back"
-        android:layout_marginRight="30dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="30dp"
         android:padding="16dp"
         android:hint="Email"
@@ -60,12 +61,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_email"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginHorizontal="30dp"
         android:background="@android:drawable/editbox_background_normal"
-        android:elevation="20dp"
-        android:hint="Password"
         android:drawableLeft="@drawable/ic_lock_24"
         android:drawablePadding="20dp"
+        android:elevation="20dp"
+        android:hint="Password"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:padding="16dp"
@@ -76,12 +77,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_password"
+        android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:textColor="#fff"
+        android:layout_marginRight="40dp"
         android:background="@drawable/btn_bg"
-        android:paddingHorizontal="50dp"
-        android:text="Login" />
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+        android:drawablePadding="30dp"
+        android:paddingHorizontal="20dp"
+        android:text="Login"
+        android:textColor="#fff" />
 
 
     <RelativeLayout
@@ -92,10 +97,10 @@
         android:layout_centerHorizontal="true">
 
         <TextView
+            android:id="@+id/tv_ac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_ac"
-            android:text="Account"/>
+            android:text="Don't have and account?" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -103,7 +108,7 @@
             android:text="Register"
             android:textColor="#FF9800"
             android:textStyle="bold"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_ac" />
 
     </RelativeLayout>
