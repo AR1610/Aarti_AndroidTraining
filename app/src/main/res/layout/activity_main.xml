@@ -5,12 +5,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/img_bg">
 
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/img_logo"
-    android:src="@drawable/main_pic"
-    android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/main_pic"
+        android:background="#000"/>
 
     <TextView
         android:id="@+id/tv_login"
@@ -76,6 +77,7 @@
     <android.widget.Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
         android:layout_below="@+id/edt_password"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
@@ -87,6 +89,29 @@
         android:paddingHorizontal="20dp"
         android:text="Login"
         android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Register"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
 
 
     <RelativeLayout
@@ -112,5 +137,6 @@
             android:layout_toRightOf="@+id/tv_ac" />
 
     </RelativeLayout>
+
 
 </RelativeLayout>
