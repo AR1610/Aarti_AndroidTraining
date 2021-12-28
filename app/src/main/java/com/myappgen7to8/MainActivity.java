@@ -2,6 +2,7 @@ package com.myappgen7to8;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ Button btnLogin;
 
         edtEmail = findViewById(R.id.edt_email);
         btnLogin = findViewById(R.id.btn_login);
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,6 +29,10 @@ Button btnLogin;
               // edtEmail.setError("Enter Email ID");
                 Toast.makeText(MainActivity.this,
                         "Email id is  "+strEmail, Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(MainActivity.this,HomeActivity.class);
+                i.putExtra("KEY_EMAIL",strEmail);
+                startActivity(i);
             }
         });
     }

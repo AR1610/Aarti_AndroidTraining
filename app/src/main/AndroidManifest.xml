@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen7to8">
         <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".LumiaActivity"
             android:exported="true" />
         <activity
