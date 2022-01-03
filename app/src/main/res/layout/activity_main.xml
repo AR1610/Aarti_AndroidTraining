@@ -7,11 +7,11 @@
 
     <ImageView
         android:id="@+id/img_logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentRight="true"
-        android:src="@drawable/main_pic"
-        android:background="#000"/>
+        android:background="#000"
+        android:src="@drawable/main_pic" />
 
     <TextView
         android:id="@+id/tv_login"

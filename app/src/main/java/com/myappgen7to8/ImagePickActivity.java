@@ -4,15 +4,17 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class ImagePickActivity extends AppCompatActivity {
 
-    Button btnGallery;
+    Button btnGallery,btnCamera;
     ImageView imgDP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +23,22 @@ public class ImagePickActivity extends AppCompatActivity {
 
         btnGallery = findViewById(R.id.btn_gallery);
         imgDP = findViewById(R.id.img_DP);
+        btnCamera = findViewById(R.id.btn_camera);
+
+        btnCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent();
+                i.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(i,12);
+            }
+        });
+
         btnGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent i = new Intent();
                 i.setAction(Intent.ACTION_PICK);
                 i.setType("image/*");
@@ -41,6 +56,11 @@ public class ImagePickActivity extends AppCompatActivity {
 
             Uri uri = data.getData();
             imgDP.setImageURI(uri);
+        }
+        if (requestCode == 12){
+
+            Bitmap bitmap = (Bitmap)data.getExtras().get("data");
+            imgDP.setImageBitmap(bitmap);
         }
 
     }
