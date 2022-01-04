@@ -52,7 +52,7 @@ public class ImagePickActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 11){
+        if (resultCode == RESULT_OK && requestCode == 11){
 
             Uri uri = data.getData();
             imgDP.setImageURI(uri);

@@ -17,13 +17,13 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         imgGIF = findViewById(R.id.img_gif);
-        imgGIF.setGifImageResource(R.drawable.img_bg);
+        imgGIF.setGifImageResource(R.drawable.android_google);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,ImagePickActivity.class);
+                Intent i = new Intent(SplashActivity.this,SeekbarRatingbarActivity.class);
                 startActivity(i);
                 finish();
             }
