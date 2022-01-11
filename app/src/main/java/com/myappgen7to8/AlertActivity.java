@@ -3,20 +3,55 @@ package com.myappgen7to8;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class AlertActivity extends AppCompatActivity {
-    Button btnAlertDialog;
+
+    Button btnAlertDialog,btnCustomDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
         btnAlertDialog = findViewById(R.id.btn_AlertDialog);
+        btnCustomDialog = findViewById(R.id.btn_custom_Dialog);
+        btnCustomDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LayoutInflater layoutInflater = getLayoutInflater();
+                View myview = layoutInflater.inflate(R.layout.raw_dialog,null);
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(AlertActivity.this);
+                AlertDialog alertDialog = builder.create();
+                alertDialog.setView(myview);
+                alertDialog.show();
+
+                EditText edtEmail = myview.findViewById(R.id.edt_email);
+                Button btnSubmit = myview.findViewById(R.id.btn_submit);
+
+                btnSubmit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (alertDialog.isShowing()){
+                            alertDialog.dismiss();
+                        }
+                        String strEmail = edtEmail.getText().toString();
+                        Toast.makeText(AlertActivity.this, ""+strEmail, Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+
+            }
+        });
     }
 
 
