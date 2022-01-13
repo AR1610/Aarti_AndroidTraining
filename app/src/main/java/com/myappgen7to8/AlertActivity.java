@@ -33,7 +33,6 @@ public class AlertActivity extends AppCompatActivity {
                 AlertDialog alertDialog = builder.create();
                 alertDialog.setView(myview);
                 alertDialog.show();
-
                 EditText edtEmail = myview.findViewById(R.id.edt_email);
                 Button btnSubmit = myview.findViewById(R.id.btn_submit);
 
