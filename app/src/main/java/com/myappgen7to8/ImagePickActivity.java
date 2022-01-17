@@ -12,10 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ImagePickActivity extends AppCompatActivity {
 
     Button btnGallery,btnCamera;
-    ImageView imgDP;
+    CircleImageView imgDP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

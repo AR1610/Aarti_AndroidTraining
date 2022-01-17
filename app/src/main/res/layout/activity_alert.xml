@@ -24,4 +24,13 @@
         android:layout_marginTop="40dp"
         android:text="Custom Dialog"/>
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_custom_toast"
+        android:layout_marginTop="40dp"
+        android:text="Custom Toast"/>
+
+
 </LinearLayout>

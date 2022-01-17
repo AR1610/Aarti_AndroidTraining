@@ -14,14 +14,28 @@ import android.widget.Toast;
 
 public class AlertActivity extends AppCompatActivity {
 
-    Button btnAlertDialog,btnCustomDialog;
-
+    Button btnAlertDialog,btnCustomDialog,btnCustomToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
         btnAlertDialog = findViewById(R.id.btn_AlertDialog);
         btnCustomDialog = findViewById(R.id.btn_custom_Dialog);
+        btnCustomToast = findViewById(R.id.btn_custom_toast);
+        btnCustomToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              //  Toast.makeText(AlertActivity.this, "Data has been sent", Toast.LENGTH_SHORT).show();
+                LayoutInflater layoutInflater = getLayoutInflater();
+                View myToast = layoutInflater.inflate(R.layout.raw_toast,null);
+                Toast toast = new Toast(AlertActivity.this);
+                toast.setView(myToast);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.show();
+            }
+        });
+
+
         btnCustomDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
