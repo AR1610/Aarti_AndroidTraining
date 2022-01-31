@@ -30,6 +30,17 @@ public class SpinnerActivity extends AppCompatActivity {
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,strLang){
+
+            @NonNull
+            @Override
+            public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                TextView tvData  = (TextView)super.getView(position, convertView, parent);
+
+                tvData.setTextColor(Color.GREEN);
+
+                return tvData;
+            }
+
             @Override
             public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 

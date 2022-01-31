@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,SpinnerActivity.class);
+                Intent i = new Intent(SplashActivity.this,SimpleGidviewActivity.class);
                 startActivity(i);
                 finish();
             }
