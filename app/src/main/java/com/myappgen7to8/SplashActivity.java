@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,SimpleGidviewActivity.class);
+                Intent i = new Intent(SplashActivity.this,VideoActivity.class);
                 startActivity(i);
                 finish();
             }
