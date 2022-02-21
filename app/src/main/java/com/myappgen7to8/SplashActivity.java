@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,CustomListViewActivity.class);
+                Intent i = new Intent(SplashActivity.this,A_Activity.class);
                 startActivity(i);
                 finish();
             }

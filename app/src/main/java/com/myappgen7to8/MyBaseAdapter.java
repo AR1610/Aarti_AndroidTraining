@@ -16,7 +16,6 @@ public class MyBaseAdapter extends BaseAdapter {
     Context context;
     ArrayList<LangModel> langModelArrayList;
     public MyBaseAdapter(Context context, ArrayList<LangModel> langModelArrayList) {
-
         this.context = context;
         this.langModelArrayList = langModelArrayList;
     }
