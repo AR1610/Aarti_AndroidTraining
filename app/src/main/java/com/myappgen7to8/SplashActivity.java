@@ -15,6 +15,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        getSupportActionBar().hide();
 
         imgGIF = findViewById(R.id.img_gif);
         imgGIF.setGifImageResource(R.drawable.android_google);
@@ -23,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,A_Activity.class);
+                Intent i = new Intent(SplashActivity.this,MenuActivity.class);
                 startActivity(i);
                 finish();
             }

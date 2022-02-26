@@ -19,6 +19,7 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_lumia.xml" value="0.176" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_menu.xml" value="0.196875" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_seekbar_ratingbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_simple_gidview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_simple_listview.xml" value="0.2359375" />
@@ -31,6 +32,8 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw_list.xml" value="0.25" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw_toast.xml" value="0.234375" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/table_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/menu/ite_menu.xml" value="0.196875" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/menu/item_menu.xml" value="0.196875" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1707236842105263" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.24666666666666667" />
         <entry key="..\:/Users/Royal Legion 02/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_expandable_list_item_2.xml" value="0.25416666666666665" />
