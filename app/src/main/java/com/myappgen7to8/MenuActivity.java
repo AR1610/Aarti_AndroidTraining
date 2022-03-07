@@ -56,13 +56,11 @@ public class MenuActivity extends AppCompatActivity {
                         return true;
                     }
                 });
-
                 popupMenu.show();
             }
         });
     }
-
-    @Override
+ @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater menuInflater = getMenuInflater();
@@ -81,7 +79,6 @@ public class MenuActivity extends AppCompatActivity {
             case R.id.ite_delete:
                 Toast.makeText(MenuActivity.this, "Delete", Toast.LENGTH_SHORT).show();
                 return true;
-
             case R.id.ite_edit:
                 Toast.makeText(MenuActivity.this, "Edit", Toast.LENGTH_SHORT).show();
                 return true;
