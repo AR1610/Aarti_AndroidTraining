@@ -38,8 +38,6 @@ public class BottomActivity extends AppCompatActivity {
                     toolbar.setTitle("Profile");
                     Toast.makeText(BottomActivity.this, "Add", Toast.LENGTH_SHORT).show();
                 }
-
-
                 return true;
             }
         });

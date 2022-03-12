@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,BottomActivity.class);
+                Intent i = new Intent(SplashActivity.this,MyTabActivity.class);
                 startActivity(i);
                 finish();
             }
