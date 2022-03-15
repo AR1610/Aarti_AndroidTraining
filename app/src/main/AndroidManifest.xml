@@ -15,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen7to8">
         <activity
+            android:name=".NavActivity"
+            android:exported="true"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/Theme.MyAppgen7to8.NoActionBar" />
+        <activity
             android:name=".MyTabActivity"
             android:exported="true" />
         <activity

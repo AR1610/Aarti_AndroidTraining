@@ -14,8 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.myappgen7to8.databinding.ActivityTabBinding;
-import com.myappgen7to8.ui.main.SectionsPagerAdapter;
-
 public class TabActivity extends AppCompatActivity {
 
     private ActivityTabBinding binding;
@@ -30,9 +28,11 @@ public class TabActivity extends AppCompatActivity {
         ViewPager viewPager = binding.viewPager;
         FloatingActionButton fab = binding.fab;
 
+/*
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(sectionsPagerAdapter);
+*/
 
         tabs.setupWithViewPager(viewPager);
 

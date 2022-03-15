@@ -26,29 +26,22 @@ public class MyTabActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Status"));
         tabLayout.addTab(tabLayout.newTab().setText("Call"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
         MyPagerAdapter myPagerAdapter = new MyPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(myPagerAdapter);
-
-
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
             }
         });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
     }
 }
