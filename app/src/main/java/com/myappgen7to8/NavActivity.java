@@ -46,21 +46,16 @@ DrawerLayout drawerLayout;
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-
                 if (id == R.id.nav_home){
-
                     Toast.makeText(NavActivity.this, "Home", Toast.LENGTH_SHORT).show();
                     toolbar.setTitle("Home");
                 }else  if (id == R.id.nav_gallery){
-
                     toolbar.setTitle("Gallery");
                     Toast.makeText(NavActivity.this, "Add", Toast.LENGTH_SHORT).show();
                 }
-
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
         });
-
     }
 }
