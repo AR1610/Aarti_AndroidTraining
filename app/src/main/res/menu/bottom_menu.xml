@@ -9,6 +9,9 @@
         android:title="Update"
         android:icon="@drawable/ic_email_24"
         />
+    <item android:id="@+id/item_setting1"
+        android:title=""
+        />
     <item android:id="@+id/item_setting"
         android:title="Setting"
         android:icon="@drawable/ic_baseline_arrow_forward_24"

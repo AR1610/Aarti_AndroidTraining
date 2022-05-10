@@ -26,18 +26,11 @@ public class AlarmActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 int time = Integer.parseInt(edtTime.getText().toString());
-
-
                 Intent  i = new Intent(AlarmActivity.this,MyBroadcast.class);
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(AlarmActivity.this,
                         1,i,PendingIntent.FLAG_ONE_SHOT);
-
-
                 AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
                 alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+(time*1000),pendingIntent);
-
-
-
 
             }
         });

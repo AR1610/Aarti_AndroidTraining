@@ -14,6 +14,7 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_alert.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_bactivity.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_bottom.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_constrain.xml" value="0.25" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_custom_list_view.xml" value="0.234375" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_date_time.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
@@ -21,10 +22,13 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_lumia.xml" value="0.176" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_material.xml" value="0.2359375" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_material_bottom.xml" value="0.234375" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_menu.xml" value="0.196875" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_my_tab.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_nav.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_notification.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_recycler_view.xml" value="0.2" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_seekbar_ratingbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_service.xml" value="0.1" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/activity_shared_pref.xml" value="0.25416666666666665" />
@@ -42,6 +46,7 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/fragment_status.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/fragment_tab.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw.xml" value="0.234375" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw_custm_list.xml" value="0.2" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw_dialog.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw_list.xml" value="0.25" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppgen7to8/app/src/main/res/layout/raw_toast.xml" value="0.234375" />

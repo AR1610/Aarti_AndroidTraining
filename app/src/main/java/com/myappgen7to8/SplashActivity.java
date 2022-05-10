@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this,AlarmActivity.class);
+                Intent i = new Intent(SplashActivity.this,RecyclerViewActivity.class);
                 startActivity(i);
                 finish();
             }
