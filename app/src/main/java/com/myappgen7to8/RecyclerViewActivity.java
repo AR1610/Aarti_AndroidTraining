@@ -28,7 +28,19 @@ public class RecyclerViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
+
+        findID();
+        dataGetFromServer();
+
+    }
+
+    private void findID() {
+
         recyclerView = findViewById(R.id.recyclerview);
+
+    }
+
+    private void dataGetFromServer() {
 
         ArrayList<UserModel> userModelArrayList = new ArrayList<UserModel>();
 
@@ -40,10 +52,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     JSONArray jsonArray = new JSONArray(response);
 
 
-                    for (int i = 0 ; i<jsonArray.length(); i++){
+                    for (int i = 0; i < jsonArray.length(); i++) {
 
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        UserModel userModel  = new UserModel();
+                        UserModel userModel = new UserModel();
                         userModel.setId(jsonObject.getInt("id"));
                         userModel.setFirst_name(jsonObject.getString("first_name"));
                         userModel.setLast_name(jsonObject.getString("last_name"));
@@ -73,12 +85,13 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     }
 
+
     private void loadData(ArrayList<UserModel> userModelArrayList) {
 
 
-        MyRecyclerAdapter myRecyclerAdapter = new MyRecyclerAdapter(this,userModelArrayList);
+        MyRecyclerAdapter myRecyclerAdapter = new MyRecyclerAdapter(this, userModelArrayList);
         RecyclerView.LayoutManager layoutManager =
-                new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
+                new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(layoutManager);
 
